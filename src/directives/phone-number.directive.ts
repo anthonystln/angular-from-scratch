@@ -27,7 +27,7 @@ export class PhoneNumberDirective {
 		}
 
 		if (this.element.hasAttribute('border-color')) {
-			this.borderColor = this.element.getAttribute('border-color');
+			this.borderColor = this.element.getAttribute('border-color')!;
 		}
 
 		this.element.style.borderColor = this.borderColor;
